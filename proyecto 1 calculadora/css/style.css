@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: all 0.8s ease;
+}
+
+body {
+  background: linear-gradient(#191654, #43c6ac);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0, 0, 30px rgb(187, 130, 130);
+  background-color: hsl(65, 100%, 85%);
+}
+.calculator #display {
+  background-color: #d1bdff;
+  color: #fcae7c;
+  border-radius: 3px;
+  margin: 0, 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+.calculator button#clear {
+  background-color: #fa9189;
+  color: #000000;
+}
+.calculator .btn-number {
+  background-color: #fcae7c;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background: #b3f5bc;
+  color: #000000;
+}
+.calculator .btn-equal {
+  background-color: #fa9189;
+  color: #000000;
+  height: 130px;
+}
+.calculator .theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.calculator .theme-toggler::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+.calculator .theme-toggler.active {
+  background-color: #333;
+}
+.calculator .theme-toggler.active::before {
+  background-color: #fff;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  background-color: #8400ff;
+  color: #00fff6;
+}
+.calculator.dark #clear {
+  background-color: #ff0571;
+}
+.calculator.dark #equal {
+  background-color: #ff0534;
+}
+.calculator.dark .btn-number {
+  background-color: #c2ff05;
+}
+.calculator.dark .btn-operator {
+  background-color: #1eff05;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
